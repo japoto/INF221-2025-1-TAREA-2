@@ -66,6 +66,10 @@ void ejecutarBenchmark(
         long memoria = MemoryTracker::getMemoryKB(); // Obtener después de ejecutar
 
         registros.push_back({archivo, tiempo, memoria});
+
+        // === Agrega esto para guardar los resultados ordenados ===
+        string nombreSalida = "data/array_output/" + nombre + "_" + archivo;
+        guardarDatos(nombreSalida, ordenado);
     }
 }
 
