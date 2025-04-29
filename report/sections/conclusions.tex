@@ -1,13 +1,9 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de 1 página.}
-\end{mdframed}
+Los resultados experimentales obtenidos a lo largo de este informe permiten reflexionar de manera crítica sobre la relación entre la complejidad teórica de los algoritmos y su comportamiento práctico en ambientes computacionales reales.
 
-La conclusión de su informe debe enfocarse en el resultado más importante de su trabajo. No se trata de repetir los puntos ya mencionados en el cuerpo del informe, sino de interpretar sus hallazgos desde un nivel más abstracto. En lugar de describir nuevamente lo que hizo, muestre cómo sus resultados responden a la necesidad planteada en la introducción.
+En primer lugar, en el ámbito de los algoritmos de ordenamiento, se corroboró que las estrategias optimizadas, como \texttt{std::sort} y \texttt{MergeSort}, mantienen un desempeño altamente eficiente en términos de tiempo de ejecución y consumo de memoria para una amplia gama de tamaños de entrada. El análisis también evidenció que, aunque teóricamente \texttt{QuickSort} ofrece buenas prestaciones promedio, en ciertos casos específicos puede degradar su rendimiento, comportamiento que resulta relevante para aplicaciones críticas donde el control del peor caso es prioritario.
 
-\begin{itemize}
-    \item  No vuelva a describir lo que ya explicó en el desarrollo del informe. En cambio, interprete sus resultados a un nivel superior, mostrando su relevancia y significado.
-    \item Aunque no debe repetir la introducción, la conclusión debe mostrar hasta qué punto logró abordar el problema o necesidad planteada en el inicio. Reflexione sobre el éxito de su análisis o experimento en relación con los objetivos propuestos.
-    \item No es necesario restablecer todo lo que hizo (ya lo ha explicado en las secciones anteriores). En su lugar, centre la conclusión en lo que significan sus resultados y cómo contribuyen al entendimiento del problema o tema abordado.
-    \item No deben centrarse en sí mismos o en lo que hicieron durante el trabajo (por ejemplo, evitando frases como "primero hicimos esto, luego esto otro...").
-    \item Lo más importante es que no se incluyan conclusiones que no se deriven directamente de los resultados obtenidos. Cada afirmación en la conclusión debe estar respaldada por el análisis o los datos presentados. Se debe evitar extraer conclusiones generales o excesivamente amplias que no puedan justificarse con los experimentos realizados.
-\end{itemize}
+De manera destacada, la experiencia empírica reafirmó la importancia de considerar el impacto de la implementación y del entorno de ejecución: \texttt{std::sort}, gracias a su estrategia híbrida (\textit{Introsort}), logró superar marginalmente a \texttt{MergeSort}, demostrando que en la práctica pequeñas optimizaciones pueden resultar decisivas en escenarios de alto rendimiento.
+
+Respecto a los algoritmos de multiplicación de matrices, los experimentos subrayan que la complejidad asintótica, aunque esencial para un análisis teórico, no garantiza necesariamente un mejor desempeño práctico en contextos finitos. El algoritmo \texttt{Naive}, pese a su complejidad $\mathcal{O}(n^3)$, superó ampliamente a \texttt{Strassen} en tiempos de ejecución y eficiencia en el uso de memoria para los tamaños de matrices considerados. Este fenómeno se explica por el considerable overhead de operaciones adicionales en \texttt{Strassen}, y por el hecho de que las arquitecturas modernas de computadores favorecen algoritmos con patrones de acceso a memoria más lineales y simples.
+
+En suma, los hallazgos de este estudio refuerzan la noción de que el análisis experimental es una herramienta indispensable para validar y contextualizar las predicciones teóricas de los algoritmos. Además, resaltan la importancia de considerar no sólo la complejidad asintótica, sino también factores prácticos como la eficiencia espacial, el acceso a memoria, y las características de la infraestructura, a la hora de seleccionar algoritmos para aplicaciones reales.

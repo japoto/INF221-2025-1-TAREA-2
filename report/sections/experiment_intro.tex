@@ -1,8 +1,16 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de 7 páginas, donde una página es para introducir los experimentos (breve descripción y comentarios sobre los datasets) y 6 páginas para los resultados.}
-\end{mdframed}
+\begin{itemize}
+    \item \textbf{Procesador:} AMD Ryzen 3 3200G
+    \item \textbf{Memoria RAM:} 16 GB DDR4 3000 Mhz
+    \item \textbf{Almacenamiento:} SSD 512 GB
+    \item \textbf{Sistema Operativo:} Ubuntu 24.04.2 LTS
+    \item \textbf{Compilador:} g++ con flags \texttt{-std=c++17 }
+\end{itemize}
+El formato de entrada para los casos de algoritmos de ordenamiento consistió en distintos arreglos almacenados en archivos \texttt{.txt}, generados mediante el código provisto por los ayudantes.
 
+\vspace{0.5em}
 
-\epigraph{``\textit{Non-reproducible single occurrences are of no significance to
-science.}''}{---\citeauthor{popper2005logic},\citeyear{popper2005logic} \cite{popper2005logic}}
-En la sección de Experimentos, es fundamental detallar la infraestructura utilizada para asegurar la reproducibilidad de los resultados, un principio clave en cualquier experimento científico. Esto implica especificar tanto el hardware (por ejemplo, procesador Intel Core i7-9700K, 3.6 GHz, 16 GB RAM DDR4, almacenamiento SSD NVMe) como el entorno software (sistema operativo Ubuntu 20.04 LTS, compilador g++ 9.3.0, y cualquier librería relevante). Además, se debe incluir una descripción clara de las condiciones de entrada, los parámetros utilizados y los resultados obtenidos, tales como tiempos de ejecución y consumo de memoria, que permitan a otros replicar los experimentos en entornos similares. \textit{La replicabilidad es un aspecto crítico para validar los resultados en la investigación científica computacional} \cite{inbookFonseca}.
+Para los algoritmos de multiplicación de matrices, el formato de entrada consistió en dos archivos \texttt{.txt} que contienen las matrices correspondientes, también generados con el código entregado por los ayudantes.
+
+\vspace{0.5em}
+
+La ejecución de los programas se realizó utilizando un \texttt{Makefile}, compilando con el comando \texttt{make} en un entorno Linux (como WSL o consola nativa), y posteriormente ejecutando los binarios generados: \texttt{./sorting} para los algoritmos de ordenamiento, y \texttt{./matrix\_multiplication} para los algoritmos de matrices.

@@ -1,26 +1,5 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de 1 página.}
-\end{mdframed}
+El presente informe se enmarca en el campo del \textbf{Análisis y Diseño de Algoritmos} en Ciencias de la Computación, disciplina fundamental que estudia tanto la eficiencia teórica como el comportamiento práctico de las soluciones algorítmicas a problemas computacionales. El estudio de algoritmos permite optimizar recursos computacionales críticos, como el tiempo de ejecución y el consumo de memoria, elementos esenciales en el desarrollo de aplicaciones eficientes a gran escala. Durante décadas, investigaciones clásicas como las de Cormen et al. han establecido las bases del análisis asintótico; sin embargo, en la práctica, el rendimiento real puede diferir significativamente del comportamiento predicho, especialmente cuando se consideran factores como la estructura de los datos, el entorno de ejecución o los costos de acceso a memoria.
 
-La introducción de este tipo de informes o reportes, tiene como objetivo principal \textbf{contextualizar el problema que se va a analizar}, proporcionando al lector la información necesaria para entender la relevancia del mismo. 
+En este contexto, surge una \textbf{brecha} relevante entre el análisis teórico y el comportamiento experimental de los algoritmos. Si bien la notación asintótica (por ejemplo, $\mathcal{O}(n\log n)$ o $\mathcal{O}(n^2)$) proporciona información sobre la tendencia de crecimiento para entradas grandes, no siempre refleja de manera precisa la eficiencia en tamaños de entrada típicos en aplicaciones reales. Este informe busca precisamente explorar esa diferencia, enfocándose en algoritmos de \textbf{ordenamiento} (Merge Sort, Quick Sort y Selection Sort) y \textbf{multiplicación de matrices} (Naive y Strassen), evaluando su comportamiento práctico frente a distintos tipos de matrices (densas, diagonales y dispersas).
 
-Es fundamental que en esta sección se presenten los antecedentes del problema, destacando investigaciones previas o principios teóricos que sirvan como base para los análisis posteriores. Además, deben explicarse los objetivos del informe, que pueden incluir la evaluación de un algoritmo, la comparación de métodos o la validación de resultados experimentales.
-
-Aunque la estructura y el enfoque siguen principios de trabajos académicos, se debe recordar que estos informes no son publicaciones científicas formales, sino trabajos de pregrado. Por lo tanto, se busca un enfoque claro y directo, que permita al lector comprender la naturaleza del problema y los objetivos del análisis, sin entrar en detalles excesivos. 
-
-
-Introduction Checklist de \citetitle{GoodScientificPaper} \cite{GoodScientificPaper}, adaptada a nuestro contexto:
-
-\begin{itemize}
-\item Indique el \textbf{campo del trabajo} (Análisis y Diseño de algoritmos en Ciencias de la Computación), por qué este campo es importante y qué se ha hecho ya en este área, con las \textbf{citas} adecuadas de la literatura académica o fuentes relevantes.
-\item Identifique una \textbf{brecha} en el conocimiento, un desafío práctico, o plantee una \textbf{pregunta} relacionada con la eficiencia, complejidad o aplicabilidad de un algoritmo particular.
-\item Resuma el propósito del informe e introduzca el análisis o experimento, dejando claro qué se está investigando o comparando, e indique \textbf{qué es novedoso} o por qué es significativo en el contexto de un curso de pregrado.
-\item Evite; repetir el resumen; proporcionar información innecesaria o fuera del alcance de la materia (limítese al análisis de algoritmos o conceptos de complejidad); exagerar la importancia del trabajo (recuerde que se trata de un informe de pregrado); afirmar novedad sin una comparación adecuada con lo enseñado en clase o la bibliografía recomendada.
-\end{itemize}
-
-
-
-\begin{mdframed}
-Recuerde que este es su trabajo, y sólo usted puede expresar con precisión lo que ha aprendido y quiere transmitir. Si lo hace bien, su introducción será más significativa y valiosa que cualquier texto automatizado. ¡Confíe en sus habilidades, y verá que puede hacer un mejor trabajo que cualquier herramienta que automatiza la generación de texto!
-\end{mdframed}
-
+El propósito principal de este estudio es comparar experimentalmente estos algoritmos en términos de \textbf{tiempo de ejecución} y \textbf{consumo de memoria}, utilizando un entorno controlado que permita garantizar la \textbf{reproducibilidad} de los resultados. A diferencia del tratamiento meramente teórico abordado en clases, aquí se pretende validar, mediante experimentación sistemática, cómo se manifiestan en la práctica las diferencias de eficiencia entre algoritmos, y en qué condiciones un algoritmo puede resultar preferible a otro.
